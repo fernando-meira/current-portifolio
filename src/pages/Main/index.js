@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { JobsAndStudies } from '../../components';
+import { JobsAndStudies, ProfileInfo } from '../../components';
 
 import { Container } from './styles';
 
@@ -8,6 +8,7 @@ export default function Main() {
   return (
     <Container>
       <JobsAndStudies />
+      <ProfileInfo />
     </Container>
   );
 }

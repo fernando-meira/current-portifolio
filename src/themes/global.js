@@ -5,10 +5,10 @@ import { pxToRem } from '../functions';
 
 export default createGlobalStyle`
   * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
   }
 
   html, body, #root {
