@@ -1,12 +1,29 @@
 import React from 'react';
 
-import { Container, ContactInfo, ProfileDescription } from './styles';
+import { colors } from '../../themes';
+import {
+  Container,
+  ContactInfo,
+  Circle,
+  ContactInfoInternal,
+  ProfileDescription,
+  Dev,
+} from './styles';
 
 export default function ProfileInfo() {
   return (
     <Container>
       <ContactInfo>
-        <h1>Hello World</h1>
+        <div className="Top">
+          <Circle background={colors.red} />
+          <Circle background={colors.yellow} />
+          <Circle background={colors.green} />
+        </div>
+
+        <ContactInfoInternal>
+          <Dev color={colors.blue}>Developer</Dev>
+          <p />
+        </ContactInfoInternal>
       </ContactInfo>
 
       <ProfileDescription>

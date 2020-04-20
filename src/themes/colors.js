@@ -3,6 +3,10 @@ export default {
 
   white: '#F8F8F2',
 
-  primary: '#FF5555',
+  red: '#FF5555',
+  green: '#2BC740',
+  yellow: '#FFBF32',
+  blue: '#87E9FE',
+  pink: '#FF76C7',
   transparent: 'transparent',
 };

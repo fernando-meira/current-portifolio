@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { darken } from 'polished';
 
 import { pxToRem } from '../../functions';
@@ -19,8 +19,31 @@ export const ContactInfo = styled.div`
   min-height: ${pxToRem(625)};
   border-radius: ${pxToRem(16)};
 
+  .Top {
+    display: flex;
+  }
+
   background: rgba(255, 255, 255, 0.1);
 `;
+
+export const Circle = styled.div`
+  border-radius: 50%;
+  width: ${pxToRem(16)};
+  height: ${pxToRem(16)};
+  margin-right: ${pxToRem(10)};
+
+  background-color: ${({ background }) => background};
+`;
+
+export const ContactInfoInternal = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Dev = styled.span`
+  color: ${({ color }) => color};
+`;
+
 export const ProfileDescription = styled.div`
   width: ${pxToRem(719)};
   height: ${pxToRem(643)};

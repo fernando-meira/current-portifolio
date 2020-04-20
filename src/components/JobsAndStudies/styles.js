@@ -9,6 +9,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: center;
 `;
 export const Jobs = styled.div`
   display: flex;
