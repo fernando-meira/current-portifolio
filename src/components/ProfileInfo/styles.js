@@ -11,19 +11,39 @@ export const Container = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  * .yellow {
+    color: ${colors.yellow};
+  }
+
+  * .red {
+    color: ${colors.red};
+  }
+
+  * .blue {
+    color: ${colors.blue};
+  }
+
+  * .green {
+    color: ${colors.green};
+  }
 `;
 
 export const ContactInfo = styled.div`
-  padding: ${pxToRem(16)};
   min-width: ${pxToRem(650)};
   min-height: ${pxToRem(625)};
+  padding: ${pxToRem(16)};
   border-radius: ${pxToRem(16)};
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  background: rgba(255, 255, 255, 0.1);
 
   .Top {
     display: flex;
   }
-
-  background: rgba(255, 255, 255, 0.1);
 `;
 
 export const Circle = styled.div`
@@ -36,12 +56,33 @@ export const Circle = styled.div`
 `;
 
 export const ContactInfoInternal = styled.div`
+  width: 80%;
+  height: auto;
+  margin-top: ${pxToRem(34)};
+
   display: flex;
   flex-direction: column;
+
+  font-size: ${pxToRem(28)};
+
+  p {
+    color: ${({ color }) => color};
+  }
 `;
 
 export const Dev = styled.span`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const AllInfo = styled.div``;
+
+export const Name = styled.p`
   color: ${({ color }) => color};
+
+  > span {
+    color: ${colors.red};
+  }
 `;
 
 export const ProfileDescription = styled.div`
@@ -54,7 +95,7 @@ export const ProfileDescription = styled.div`
   justify-content: space-between;
 
   p {
-    font-size: ${pxToRem(24)};
+    font-size: ${pxToRem(22)};
     line-height: 1.8;
 
     span {
