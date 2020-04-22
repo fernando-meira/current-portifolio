@@ -23,7 +23,7 @@ export default createGlobalStyle`
   body, input, button {
     color: ${colors.white};
     font-size: ${pxToRem(16)};
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: Fira Code, Arial, Helvetica, sans-serif;
   }
 
   button {

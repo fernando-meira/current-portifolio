@@ -12,6 +12,10 @@ export const Container = styled.section`
   align-items: center;
   justify-content: space-around;
 
+  * .white {
+    color: ${colors.white};
+  }
+
   * .yellow {
     color: ${colors.yellow};
   }
@@ -30,9 +34,9 @@ export const Container = styled.section`
 `;
 
 export const ContactInfo = styled.div`
-  min-width: ${pxToRem(650)};
-  min-height: ${pxToRem(625)};
   padding: ${pxToRem(16)};
+  max-width: 50%;
+  min-height: ${pxToRem(625)};
   border-radius: ${pxToRem(16)};
 
   display: flex;
@@ -66,23 +70,38 @@ export const ContactInfoInternal = styled.div`
   font-size: ${pxToRem(28)};
 
   p {
+    margin: ${pxToRem(5)} 0;
+
     color: ${({ color }) => color};
   }
 `;
 
 export const Dev = styled.span`
-  display: flex;
-  flex-direction: row;
+  margin-left: ${pxToRem(54)};
+
+  /* display: flex;
+  flex-direction: row; */
 `;
 
-export const AllInfo = styled.div``;
+export const AllInfo = styled.div`
+  margin-left: ${pxToRem(108)};
 
-export const Name = styled.p`
-  color: ${({ color }) => color};
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
 
-  > span {
-    color: ${colors.red};
+  > a {
+    text-decoration: none;
+
+    :hover {
+      text-decoration: underline;
+    }
   }
+`;
+
+export const Contact = styled.span`
+  margin-left: ${pxToRem(54)};
 `;
 
 export const ProfileDescription = styled.div`
