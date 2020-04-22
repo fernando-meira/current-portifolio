@@ -33,8 +33,18 @@ export default function ProfileInfo() {
               name<span className="red">=</span>
               <span className="yellow">"Fernando Meira"</span>
             </Name>
-            <p className="green">cleanCode</p>
-            <p className="green">interest</p>
+
+            <p className="green">
+              role<span className="red">=</span>
+              <span className="yellow">"Web and Mobile Front End"</span>
+            </p>
+
+            <p className="green">
+              programming tools<span className="red">=</span>
+              <span className="yellow">
+                "JavaScript, ReactJS, React Native and Node.js"
+              </span>
+            </p>
           </AllInfo>
         </ContactInfoInternal>
       </ContactInfo>

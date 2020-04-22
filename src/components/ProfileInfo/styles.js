@@ -56,7 +56,7 @@ export const Circle = styled.div`
 `;
 
 export const ContactInfoInternal = styled.div`
-  width: 80%;
+  width: 100%;
   height: auto;
   margin-top: ${pxToRem(34)};
 
