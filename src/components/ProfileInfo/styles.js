@@ -34,8 +34,8 @@ export const Container = styled.section`
 `;
 
 export const ContactInfo = styled.div`
-  padding: ${pxToRem(16)};
   max-width: 50%;
+  padding: ${pxToRem(16)};
   min-height: ${pxToRem(625)};
   border-radius: ${pxToRem(16)};
 
@@ -62,7 +62,6 @@ export const Circle = styled.div`
 export const ContactInfoInternal = styled.div`
   width: 100%;
   height: auto;
-  margin-top: ${pxToRem(34)};
 
   display: flex;
   flex-direction: column;
@@ -76,11 +75,12 @@ export const ContactInfoInternal = styled.div`
   }
 `;
 
-export const Dev = styled.span`
+export const Dev = styled.div`
   margin-left: ${pxToRem(54)};
+`;
 
-  /* display: flex;
-  flex-direction: row; */
+export const Title = styled.p`
+  margin-top: ${pxToRem(40)} !important;
 `;
 
 export const AllInfo = styled.div`
@@ -91,7 +91,7 @@ export const AllInfo = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  > a {
+  > p a {
     text-decoration: none;
 
     :hover {
@@ -100,7 +100,7 @@ export const AllInfo = styled.div`
   }
 `;
 
-export const Contact = styled.span`
+export const Contact = styled.div`
   margin-left: ${pxToRem(54)};
 `;
 
@@ -117,7 +117,8 @@ export const ProfileDescription = styled.div`
     font-size: ${pxToRem(22)};
     line-height: 1.8;
 
-    span {
+    a {
+      color: ${colors.white};
       text-decoration: underline;
     }
   }

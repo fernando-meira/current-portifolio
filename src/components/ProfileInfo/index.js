@@ -2,14 +2,15 @@ import React from 'react';
 
 import { colors } from '../../themes';
 import {
-  Container,
-  ContactInfo,
-  Circle,
-  ContactInfoInternal,
-  ProfileDescription,
   Dev,
+  Title,
+  Circle,
   Contact,
   AllInfo,
+  Container,
+  ContactInfo,
+  ProfileDescription,
+  ContactInfoInternal,
 } from './styles';
 
 export default function ProfileInfo() {
@@ -18,15 +19,17 @@ export default function ProfileInfo() {
       <ContactInfo>
         <div className="Top">
           <Circle background={colors.red} />
+
           <Circle background={colors.yellow} />
+
           <Circle background={colors.green} />
         </div>
 
         <ContactInfoInternal>
           <Dev>
-            <p className="blue">
+            <Title className="blue">
               <span className="white">&lt;</span> Developer
-            </p>
+            </Title>
             <AllInfo>
               <p className="green">
                 name
@@ -50,9 +53,10 @@ export default function ProfileInfo() {
           </Dev>
 
           <Contact>
-            <p className="blue">
+            <Title className="blue">
               <span className="white">&lt;</span> Contact
-            </p>
+            </Title>
+
             <AllInfo>
               <p className="green">
                 github
@@ -83,6 +87,7 @@ export default function ProfileInfo() {
                 <span className="yellow">"thomwork@outlook.com"</span>
               </p>
             </AllInfo>
+
             <span className="white">/&gt;</span>
           </Contact>
         </ContactInfoInternal>
@@ -100,14 +105,11 @@ export default function ProfileInfo() {
           massa. Curabitur porttitor luctus lacinia. Sed molestie tellus ut
           condimentum tempus. Donec eu sagittis nisi, vitae viverra lectus.
           Integer pellentesque odio eu quam fermentum, id porta nisl vestibulum.
-          Mauris aliquam fringilla ex, non bibendum lacus. Fusce tempus ipsum
-          ante, non ultrices diam porta sed. In eu tristique enim, ac dignissim
-          leo. Nulla vehicula leo nec ante pretium eleifend. Cras egestas nibh
-          magna. Suspendisse a ante.
+          Mauris aliquam fringilla ex, non bibendum lacus.
         </p>
 
         <p>
-          Let’s work together ? <span>send me a message!</span>
+          Let’s work together? <a href="#">send me a message!</a>
         </p>
       </ProfileDescription>
     </Container>
