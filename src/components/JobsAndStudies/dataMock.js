@@ -40,12 +40,12 @@ export default {
     {
       id: 2,
       local: 'BootcampRocketseat',
-      img: bootcampRocketseat,
+      img: perfilDefault,
     },
     {
       id: 3,
       local: 'Origamid',
-      img: origamidLogo,
+      img: perfilDefault,
     },
     {
       id: 4,
