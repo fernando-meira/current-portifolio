@@ -166,11 +166,11 @@ export const ProfileDescription = styled.div`
 
   p {
     font-size: ${pxToRem(22)};
+  }
 
-    a {
-      color: ${colors.white};
-      text-decoration: underline;
-    }
+  a {
+    color: ${colors.white};
+    text-decoration: underline;
   }
 
   a:hover {
