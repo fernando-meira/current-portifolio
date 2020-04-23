@@ -24,6 +24,7 @@ export default createGlobalStyle`
     color: ${colors.white};
     font-size: ${pxToRem(16)};
     font-family: Fira Code, Arial, Helvetica, sans-serif;
+    line-height: 1.5;
   }
 
   button {

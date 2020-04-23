@@ -76,7 +76,7 @@ export default function ProfileInfo() {
                   href="https://www.linkedin.com/in/lassofend/"
                   className="white"
                 >
-                  /in/lassofend/
+                  /in/lassofend
                 </a>
                 <span className="blue">{'}'}</span>
               </p>
@@ -109,7 +109,7 @@ export default function ProfileInfo() {
         </p>
 
         <p>
-          Let’s work together? <a href="#">send me a message!</a>
+          Let’s work together? <a href="#">Send me a message!</a>
         </p>
       </ProfileDescription>
     </Container>

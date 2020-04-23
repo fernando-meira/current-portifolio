@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { darken } from 'polished';
+import media from 'styled-media-query';
 
 import { pxToRem } from '../../functions';
 import { colors } from '../../themes';
@@ -9,7 +10,7 @@ export const Container = styled.section`
   width: 90%;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
 
   * .white {
@@ -45,13 +46,17 @@ export const ContactInfo = styled.div`
 
   background: rgba(255, 255, 255, 0.1);
 
+  ${media.lessThan('1366px')`
+    min-height: auto;
+  `}
+
   .Top {
     display: flex;
   }
 `;
 
 export const Circle = styled.div`
-  border-radius: 50%;
+  border-radius: 45%;
   width: ${pxToRem(16)};
   height: ${pxToRem(16)};
   margin-right: ${pxToRem(10)};
@@ -69,10 +74,13 @@ export const ContactInfoInternal = styled.div`
   font-size: ${pxToRem(28)};
 
   p {
-    margin: ${pxToRem(5)} 0;
-
     color: ${({ color }) => color};
   }
+
+  ${media.lessThan('1366px')`
+    font-size: ${pxToRem(18)};
+
+  `}
 `;
 
 export const Dev = styled.div`
@@ -115,11 +123,23 @@ export const ProfileDescription = styled.div`
 
   p {
     font-size: ${pxToRem(22)};
-    line-height: 1.8;
 
     a {
       color: ${colors.white};
       text-decoration: underline;
     }
   }
+
+  a:hover {
+    color: ${colors.blue};
+  }
+
+  ${media.lessThan('1366px')`
+    width: 45%;
+    height: auto;
+
+    > p {
+      font-size: ${pxToRem(18)};
+    }
+  `}
 `;

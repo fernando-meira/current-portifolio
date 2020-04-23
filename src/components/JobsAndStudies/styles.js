@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 import { pxToRem } from '../../functions';
 
@@ -25,13 +26,26 @@ export const JobsDescription = styled.p`
 
 export const JobsImage = styled.div`
   img {
-    border-radius: 50%;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.78);
     width: ${pxToRem(120)};
     height: ${pxToRem(120)};
     margin: 0 ${pxToRem(10)};
-    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.78);
+    border-radius: 50%;
+
+    transition: 0.3s;
 
     object-fit: cover;
+
+    :hover {
+      transform: scale(0.9);
+
+      border-radius: ${pxToRem(8)};
+    }
+
+    ${media.lessThan('1366px')`
+    width: ${pxToRem(80)};
+    height: ${pxToRem(80)};
+  `}
   }
 `;
 
@@ -53,6 +67,18 @@ export const StudiesImage = styled.div`
     margin: 0 ${pxToRem(10)};
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.78);
 
+    transition: 0.3s;
     object-fit: cover;
+
+    :hover {
+      transform: scale(0.9);
+
+      border-radius: ${pxToRem(8)};
+    }
+
+    ${media.lessThan('1366px')`
+    width: ${pxToRem(80)};
+    height: ${pxToRem(80)};
+  `}
   }
 `;
