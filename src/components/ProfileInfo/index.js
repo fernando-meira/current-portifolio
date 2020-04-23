@@ -94,19 +94,7 @@ export default function ProfileInfo() {
       </ContactInfo>
 
       <ProfileDescription>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          scelerisque a quam id imperdiet. Duis mauris tellus, imperdiet vel
-          augue sed, lacinia ultrices nulla. Sed arcu odio, suscipit et quam eu,
-          vulputate egestas leo. Interdum et malesuada fames ac ante ipsum
-          primis in faucibus. Curabitur congue vehicula metus nec porta. In
-          tempor, ex vestibulum vulputate eleifend, nisi enim sollicitudin
-          neque, quis aliquam purus ligula a lorem. Vestibulum eleifend magna
-          massa. Curabitur porttitor luctus lacinia. Sed molestie tellus ut
-          condimentum tempus. Donec eu sagittis nisi, vitae viverra lectus.
-          Integer pellentesque odio eu quam fermentum, id porta nisl vestibulum.
-          Mauris aliquam fringilla ex, non bibendum lacus.
-        </p>
+        <p>Em desenvolvimento!</p>
 
         <p>
           Let’s work together? <a href="#">Send me a message!</a>

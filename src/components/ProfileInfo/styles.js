@@ -45,6 +45,7 @@ export const ContactInfo = styled.div`
   justify-content: flex-start;
 
   background: rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
 
   ${media.lessThan('1366px')`
     min-height: auto;
@@ -52,6 +53,12 @@ export const ContactInfo = styled.div`
 
   .Top {
     display: flex;
+  }
+
+  :hover {
+    transform: scale(1.04);
+
+    border: 2px solid ${colors.white};
   }
 `;
 
