@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
+import { lighten } from 'polished';
 
 import { pxToRem } from '../../functions';
+import { colors } from '../../themes';
 
 export const Container = styled.section`
   margin: ${pxToRem(50)} auto;

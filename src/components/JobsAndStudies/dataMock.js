@@ -22,11 +22,6 @@ export default {
       local: 'iClouds',
       img: perfilDefault,
     },
-    {
-      id: 5,
-      local: 'iClouds',
-      img: perfilDefault,
-    },
   ],
   studies: [
     {
