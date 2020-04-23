@@ -22,16 +22,6 @@ export default function JobsAndStudies() {
     <Container>
       <Perfil />
 
-      <Jobs>
-        <JobsDescription>Jobs</JobsDescription>
-
-        <JobsImage>
-          {jobs.map((job) => (
-            <img key={job.id} src={job.img} alt={job.local} />
-          ))}
-        </JobsImage>
-      </Jobs>
-
       <Studies>
         <StudiesDescription>Studies</StudiesDescription>
 
@@ -41,6 +31,16 @@ export default function JobsAndStudies() {
           ))}
         </StudiesImage>
       </Studies>
+
+      <Jobs>
+        <JobsDescription>Jobs</JobsDescription>
+
+        <JobsImage>
+          {jobs.map((job) => (
+            <img key={job.id} src={job.img} alt={job.local} />
+          ))}
+        </JobsImage>
+      </Jobs>
     </Container>
   );
 }

@@ -94,7 +94,7 @@ export default function ProfileInfo() {
       </ContactInfo>
 
       <ProfileDescription>
-        <p>Em desenvolvimento!</p>
+        <p>Website under development!</p>
 
         <p>
           Let’s work together? <a href="#">Send me a message!</a>

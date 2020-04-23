@@ -13,17 +13,33 @@ export const Container = styled.section`
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
+
+  ${media.lessThan('small')`
+    margin: ${pxToRem(25)} auto;
+
+    align-items: center;
+    flex-direction: column;
+
+  `}
 `;
 export const Jobs = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  ${media.lessThan('small')`
+    margin-top: ${pxToRem(25)};
+  `}
 `;
 
 export const JobsDescription = styled.p`
   margin-bottom: ${pxToRem(20)};
 
   font-size: ${pxToRem(20)};
+
+  ${media.lessThan('small')`
+    margin-bottom: ${pxToRem(10)};
+  `}
 `;
 
 export const JobsImage = styled.div`
@@ -44,10 +60,17 @@ export const JobsImage = styled.div`
       border-radius: ${pxToRem(8)};
     }
 
-    ${media.lessThan('1366px')`
-    width: ${pxToRem(80)};
-    height: ${pxToRem(80)};
+    ${media.lessThan('huge')`
+      width: ${pxToRem(80)};
+      height: ${pxToRem(80)};
   `}
+
+    ${media.lessThan('small')`
+      max-width: ${pxToRem(60)};
+      max-height: ${pxToRem(60)};
+      margin: 0 ${pxToRem(2)};
+
+    `}
   }
 `;
 
@@ -55,11 +78,19 @@ export const Studies = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  ${media.lessThan('small')`
+    margin-top: ${pxToRem(25)};
+  `}
 `;
 export const StudiesDescription = styled.div`
   margin-bottom: ${pxToRem(20)};
 
   font-size: ${pxToRem(20)};
+
+  ${media.lessThan('small')`
+    margin-bottom: ${pxToRem(10)};
+  `}
 `;
 export const StudiesImage = styled.div`
   img {
@@ -78,9 +109,15 @@ export const StudiesImage = styled.div`
       border-radius: ${pxToRem(8)};
     }
 
-    ${media.lessThan('1366px')`
-    width: ${pxToRem(80)};
-    height: ${pxToRem(80)};
+    ${media.lessThan('huge')`
+      width: ${pxToRem(80)};
+      height: ${pxToRem(80)};
   `}
+
+    ${media.lessThan('small')`
+      max-width: ${pxToRem(60)};
+      max-height: ${pxToRem(60)};
+      margin: 0 ${pxToRem(2)};
+    `}
   }
 `;

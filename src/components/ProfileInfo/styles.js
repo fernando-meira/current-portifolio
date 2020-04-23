@@ -32,6 +32,12 @@ export const Container = styled.section`
   * .green {
     color: ${colors.green};
   }
+
+  ${media.lessThan('small')`
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  `}
 `;
 
 export const ContactInfo = styled.div`
@@ -47,8 +53,12 @@ export const ContactInfo = styled.div`
   background: rgba(255, 255, 255, 0.1);
   transition: 0.3s;
 
-  ${media.lessThan('1366px')`
+  ${media.lessThan('huge')`
     min-height: auto;
+  `}
+
+  ${media.lessThan('small')`
+    max-width: 98%;
   `}
 
   .Top {
@@ -69,6 +79,11 @@ export const Circle = styled.div`
   margin-right: ${pxToRem(10)};
 
   background-color: ${({ background }) => background};
+
+  ${media.lessThan('small')`
+    width: ${pxToRem(12)};
+    height: ${pxToRem(12)};
+  `};
 `;
 
 export const ContactInfoInternal = styled.div`
@@ -84,18 +99,31 @@ export const ContactInfoInternal = styled.div`
     color: ${({ color }) => color};
   }
 
-  ${media.lessThan('1366px')`
+  ${media.lessThan('huge')`
     font-size: ${pxToRem(18)};
 
+  `}
+
+  ${media.lessThan('small')`
+    font-size: ${pxToRem(16)};
   `}
 `;
 
 export const Dev = styled.div`
   margin-left: ${pxToRem(54)};
+
+  ${media.lessThan('small')`
+    margin-left: ${pxToRem(8)};
+
+  `}
 `;
 
 export const Title = styled.p`
   margin-top: ${pxToRem(40)} !important;
+
+  ${media.lessThan('small')`
+    margin-top: ${pxToRem(10)} !important;
+  `}
 `;
 
 export const AllInfo = styled.div`
@@ -105,6 +133,10 @@ export const AllInfo = styled.div`
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
+
+  ${media.lessThan('small')`
+    margin-left: ${pxToRem(32)};
+  `}
 
   > p a {
     text-decoration: none;
@@ -117,6 +149,10 @@ export const AllInfo = styled.div`
 
 export const Contact = styled.div`
   margin-left: ${pxToRem(54)};
+
+  ${media.lessThan('small')`
+    margin-left: ${pxToRem(8)};
+  `}
 `;
 
 export const ProfileDescription = styled.div`
@@ -141,12 +177,23 @@ export const ProfileDescription = styled.div`
     color: ${colors.blue};
   }
 
-  ${media.lessThan('1366px')`
+  ${media.lessThan('huge')`
     width: 45%;
     height: auto;
 
     > p {
       font-size: ${pxToRem(18)};
     }
+  `}
+
+  ${media.lessThan('small')`
+    width: 98%;
+    height: auto;
+    margin-top: ${pxToRem(25)};
+
+    p {
+      font-size: ${pxToRem(16)}
+    }
+
   `}
 `;

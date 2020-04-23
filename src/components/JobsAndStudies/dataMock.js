@@ -1,4 +1,7 @@
 import perfilDefault from '../../themes/assets/perfilDefault.png';
+import logoCps from '../../themes/assets/logo-cps.jpg';
+import bootcampRocketseat from '../../themes/assets/bootcampRocketseat.png';
+import origamidLogo from '../../themes/assets/origamid.png';
 
 export default {
   jobs: [
@@ -22,22 +25,27 @@ export default {
       local: 'iClouds',
       img: perfilDefault,
     },
+    {
+      id: 5,
+      local: 'iClouds',
+      img: perfilDefault,
+    },
   ],
   studies: [
     {
       id: 1,
-      local: 'Datametrica',
-      img: perfilDefault,
+      local: 'Fatec Itapetininga',
+      img: logoCps,
     },
     {
       id: 2,
-      local: 'iClouds',
-      img: perfilDefault,
+      local: 'BootcampRocketseat',
+      img: bootcampRocketseat,
     },
     {
       id: 3,
-      local: 'iClouds',
-      img: perfilDefault,
+      local: 'Origamid',
+      img: origamidLogo,
     },
     {
       id: 4,

@@ -13,9 +13,17 @@ export const Container = styled.img`
   transition: 0.3s;
   object-fit: cover;
 
-  ${media.lessThan('1366px')`
+  ${media.lessThan('huge')`
     width: ${pxToRem(150)};
     height: ${pxToRem(150)};
+  `}
+
+  ${media.lessThan('large')`
+    width: ${pxToRem(120)};
+    height: ${pxToRem(120)};
+
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.78);
+
   `}
 
   :hover {
