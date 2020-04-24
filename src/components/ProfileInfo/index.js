@@ -98,7 +98,7 @@ export default function ProfileInfo() {
 
         <p>Let’s work together?</p>
 
-        <a href="https://wa.me/5515996350102?text=Olá!%20Tudo%20bem?">
+        <a href="https://wa.me/5515998266793?text=Olá!%20Tudo%20bem?">
           Send me a message!
         </a>
       </ProfileDescription>
