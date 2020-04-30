@@ -14,6 +14,10 @@ export const Container = styled.section`
   align-items: flex-start;
   justify-content: center;
 
+  ${media.lessThan('medium')`
+    max-width: 100%;
+  `}
+
   ${media.lessThan('small')`
     margin: ${pxToRem(25)} auto;
 
