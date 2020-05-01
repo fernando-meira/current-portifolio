@@ -5,6 +5,7 @@ import { Perfil } from '..';
 import data from './dataMock';
 import {
   Container,
+  StudiesAndJobs,
   Jobs,
   JobsDescription,
   JobsImage,
@@ -16,31 +17,31 @@ import {
 export default function JobsAndStudies() {
   const { jobs, studies } = data;
 
-  console.log('Jobs', jobs);
-  console.log('Studies', studies);
   return (
     <Container>
       <Perfil />
 
-      <Studies>
-        <StudiesDescription>Studies</StudiesDescription>
+      <StudiesAndJobs>
+        <Studies>
+          <StudiesDescription>Studies</StudiesDescription>
 
-        <StudiesImage>
-          {studies.map((study) => (
-            <img key={study.id} src={study.img} alt={study.local} />
-          ))}
-        </StudiesImage>
-      </Studies>
+          <StudiesImage>
+            {studies.map((study) => (
+              <img key={study.id} src={study.img} alt={study.local} />
+            ))}
+          </StudiesImage>
+        </Studies>
 
-      <Jobs>
-        <JobsDescription>Jobs</JobsDescription>
+        <Jobs>
+          <JobsDescription>Jobs</JobsDescription>
 
-        <JobsImage>
-          {jobs.map((job) => (
-            <img key={job.id} src={job.img} alt={job.local} />
-          ))}
-        </JobsImage>
-      </Jobs>
+          <JobsImage>
+            {jobs.map((job) => (
+              <img key={job.id} src={job.img} alt={job.local} />
+            ))}
+          </JobsImage>
+        </Jobs>
+      </StudiesAndJobs>
     </Container>
   );
 }

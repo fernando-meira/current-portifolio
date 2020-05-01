@@ -33,7 +33,7 @@ export const Container = styled.section`
     color: ${colors.green};
   }
 
-  ${media.lessThan('small')`
+  ${media.lessThan('medium')`
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -55,6 +55,10 @@ export const ContactInfo = styled.div`
 
   ${media.lessThan('huge')`
     min-height: auto;
+  `}
+
+  ${media.lessThan('medium')`
+    max-width: 95%;
   `}
 
   ${media.lessThan('small')`

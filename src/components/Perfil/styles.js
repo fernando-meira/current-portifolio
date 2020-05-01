@@ -23,7 +23,11 @@ export const Container = styled.img`
     height: ${pxToRem(120)};
 
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.78);
+  `}
 
+  ${media.lessThan('medium')`
+    width: ${pxToRem(130)};
+    height: ${pxToRem(130)};
   `}
 
   :hover {

@@ -6,8 +6,8 @@ import { pxToRem } from '../../functions';
 import { colors } from '../../themes';
 
 export const Container = styled.section`
-  margin: ${pxToRem(50)} auto;
   max-width: 90%;
+  margin: ${pxToRem(50)} auto;
 
   display: flex;
   flex-direction: row;
@@ -15,7 +15,11 @@ export const Container = styled.section`
   justify-content: center;
 
   ${media.lessThan('medium')`
-    max-width: 100%;
+    max-width: 95%;
+    margin: ${pxToRem(30)} auto;
+
+    align-items: center;
+    flex-direction: column;
   `}
 
   ${media.lessThan('small')`
@@ -26,6 +30,12 @@ export const Container = styled.section`
 
   `}
 `;
+
+export const StudiesAndJobs = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
 export const Jobs = styled.div`
   display: flex;
   align-items: center;
@@ -68,6 +78,11 @@ export const JobsImage = styled.div`
       width: ${pxToRem(80)};
       height: ${pxToRem(80)};
   `}
+
+    ${media.lessThan('medium')`
+      width: ${pxToRem(60)};
+      height: ${pxToRem(60)};
+    `}
 
     ${media.lessThan('small')`
       max-width: ${pxToRem(60)};
@@ -117,6 +132,11 @@ export const StudiesImage = styled.div`
       width: ${pxToRem(80)};
       height: ${pxToRem(80)};
   `}
+
+    ${media.lessThan('medium')`
+      width: ${pxToRem(60)};
+      height: ${pxToRem(60)};
+    `}
 
     ${media.lessThan('small')`
       max-width: ${pxToRem(60)};
