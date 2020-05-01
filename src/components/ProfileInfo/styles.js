@@ -34,6 +34,8 @@ export const Container = styled.section`
   }
 
   ${media.lessThan('medium')`
+    margin: 0 auto;
+
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -125,6 +127,10 @@ export const Dev = styled.div`
 export const Title = styled.p`
   margin-top: ${pxToRem(40)} !important;
 
+  ${media.lessThan('medium')`
+    margin-top: ${pxToRem(20)} !important;
+  `}
+
   ${media.lessThan('small')`
     margin-top: ${pxToRem(10)} !important;
   `}
@@ -188,6 +194,10 @@ export const ProfileDescription = styled.div`
     > p {
       font-size: ${pxToRem(18)};
     }
+  `}
+
+  ${media.lessThan('medium')`
+    margin-top: ${pxToRem(25)};
   `}
 
   ${media.lessThan('small')`
