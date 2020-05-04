@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactGA from 'react-ga';
 
-import { JobsAndStudies, ProfileInfo } from '../../components';
+import { Perfil, JobsAndStudies, ProfileInfo } from '../../components';
 
 import { Container } from './styles';
 
@@ -11,6 +11,7 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 export default function Main() {
   return (
     <Container>
+      <Perfil />
       <JobsAndStudies />
       <ProfileInfo />
     </Container>

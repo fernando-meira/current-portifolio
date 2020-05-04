@@ -3,7 +3,20 @@ import media from 'styled-media-query';
 
 import { pxToRem } from '../../functions';
 
-export const Container = styled.img`
+export const Container = styled.div`
+  margin-top: ${pxToRem(32)};
+
+  ${media.lessThan('medium')`
+    margin-top: ${pxToRem(30)};
+
+  `}
+
+  ${media.lessThan('small')`
+    margin-top: ${pxToRem(25)} auto;
+  `}
+
+  img {
+
   border-radius: 50%;
   width: ${pxToRem(207)};
   height: ${pxToRem(207)};
@@ -34,5 +47,7 @@ export const Container = styled.img`
     transform: scale(0.85);
 
     border-radius: ${pxToRem(16)};
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
   }
-`;
+}`;

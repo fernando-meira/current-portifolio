@@ -19,29 +19,25 @@ export default function JobsAndStudies() {
 
   return (
     <Container>
-      <Perfil />
+      <Studies>
+        <StudiesDescription>Studies</StudiesDescription>
 
-      <StudiesAndJobs>
-        <Studies>
-          <StudiesDescription>Studies</StudiesDescription>
+        <StudiesImage>
+          {studies.map((study) => (
+            <img key={study.id} src={study.img} alt={study.local} />
+          ))}
+        </StudiesImage>
+      </Studies>
 
-          <StudiesImage>
-            {studies.map((study) => (
-              <img key={study.id} src={study.img} alt={study.local} />
-            ))}
-          </StudiesImage>
-        </Studies>
+      <Jobs>
+        <JobsDescription>Jobs</JobsDescription>
 
-        <Jobs>
-          <JobsDescription>Jobs</JobsDescription>
-
-          <JobsImage>
-            {jobs.map((job) => (
-              <img key={job.id} src={job.img} alt={job.local} />
-            ))}
-          </JobsImage>
-        </Jobs>
-      </StudiesAndJobs>
+        <JobsImage>
+          {jobs.map((job) => (
+            <img key={job.id} src={job.img} alt={job.local} />
+          ))}
+        </JobsImage>
+      </Jobs>
     </Container>
   );
 }

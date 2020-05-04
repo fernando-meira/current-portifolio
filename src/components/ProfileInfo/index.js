@@ -96,6 +96,8 @@ export default function ProfileInfo() {
       <ProfileDescription>
         <p>Website under development!</p>
 
+        <p>Soon more information related to me, my studies and work.</p>
+
         <p>Let’s work together?</p>
 
         <a href="https://wa.me/5515998266793?text=Olá!%20Tudo%20bem?">

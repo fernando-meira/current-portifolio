@@ -34,7 +34,7 @@ export const Container = styled.section`
   }
 
   ${media.lessThan('medium')`
-    margin: 0 auto;
+    margin: ${pxToRem(16)} auto;
 
     align-items: center;
     flex-direction: column;
