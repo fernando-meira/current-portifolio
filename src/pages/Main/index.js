@@ -12,7 +12,7 @@ export default function Main() {
   return (
     <Container>
       <Perfil />
-      <JobsAndStudies />
+      {/* <JobsAndStudies /> */}
       <ProfileInfo />
     </Container>
   );

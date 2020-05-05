@@ -1,12 +1,18 @@
+import logoSkill from '../../themes/assets/skill.png';
 import logoCps from '../../themes/assets/logo-cps.jpg';
+import origamidLogo from '../../themes/assets/origamid.png';
 import logoiClouds from '../../themes/assets/logo-iclouds.svg';
 import perfilDefault from '../../themes/assets/perfilDefault.png';
-import logoSkill from '../../themes/assets/skill.png';
+import logoDatametrica from '../../themes/assets/datametrica.png';
 import bootcampRocketseat from '../../themes/assets/bootcampRocketseat.png';
-import origamidLogo from '../../themes/assets/origamid.png';
 
 export default {
   jobs: [
+    // {
+    //   id: 1,
+    //   local: 'Datametrica',
+    //   img: logoDatametrica,
+    // },
     {
       id: 2,
       local: 'iClouds',
@@ -29,10 +35,10 @@ export default {
       local: 'BootcampRocketseat',
       img: bootcampRocketseat,
     },
-    {
-      id: 3,
-      local: 'Origamid',
-      img: origamidLogo,
-    },
+    // {
+    //   id: 3,
+    //   local: 'Origamid',
+    //   img: origamidLogo,
+    // },
   ],
 };

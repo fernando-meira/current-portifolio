@@ -33,12 +33,16 @@ export const Container = styled.section`
     color: ${colors.green};
   }
 
-  ${media.lessThan('medium')`
-    margin: ${pxToRem(16)} auto;
+  ${media.lessThan('large')`
+    margin: ${pxToRem(32)};
 
     align-items: center;
     flex-direction: column;
     justify-content: center;
+  `}
+
+  ${media.lessThan('medium')`
+    margin: ${pxToRem(16)} auto;
   `}
 `;
 
@@ -57,6 +61,10 @@ export const ContactInfo = styled.div`
 
   ${media.lessThan('huge')`
     min-height: auto;
+  `}
+
+  ${media.lessThan('large')`
+    max-width: 90%;
   `}
 
   ${media.lessThan('medium')`
@@ -194,6 +202,10 @@ export const ProfileDescription = styled.div`
     > p {
       font-size: ${pxToRem(18)};
     }
+  `}
+
+  ${media.lessThan('large')`
+    margin-top: ${pxToRem(32)};
   `}
 
   ${media.lessThan('medium')`
