@@ -1,6 +1,6 @@
 import React from 'react';
 
-import profile from '../../themes/assets/Perfil-Git-Editando-cC.jpg';
+import profile from '../../themes/assets/perfilPortifólio.svg';
 import { Container } from './styles';
 
 export default function Perfil() {
