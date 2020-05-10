@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactGA from 'react-ga';
 
-import { Perfil, JobsAndStudies, ProfileInfo } from '../../components';
+import { Perfil, JobsAndStudies, ProfileInfo, Thanks } from '../../components';
 
 import { Container } from './styles';
 
@@ -14,6 +14,7 @@ export default function Main() {
       <Perfil />
       {/* <JobsAndStudies /> */}
       <ProfileInfo />
+      {/* <Thanks /> */}
     </Container>
   );
 }

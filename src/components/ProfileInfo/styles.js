@@ -6,7 +6,7 @@ import { pxToRem } from '../../functions';
 import { colors } from '../../themes';
 
 export const Container = styled.section`
-  margin: ${pxToRem(50)} auto;
+  margin: ${pxToRem(30)} auto;
   width: 90%;
 
   display: flex;

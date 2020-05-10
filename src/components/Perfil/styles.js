@@ -21,6 +21,7 @@ export const Container = styled.div`
   width: ${pxToRem(207)};
   height: ${pxToRem(207)};
   margin: 0 ${pxToRem(33)};
+  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 1px 6px 0 rgba(255, 255, 255, 0.3);
 
   transition: 0.3s;
@@ -47,7 +48,7 @@ export const Container = styled.div`
     transform: scale(0.85);
 
     border-radius: ${pxToRem(16)};
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 
   }
 }`;
