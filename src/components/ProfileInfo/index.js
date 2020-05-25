@@ -94,15 +94,20 @@ export default function ProfileInfo() {
       </ContactInfo>
 
       <ProfileDescription>
-        <p>Website under development!</p>
-
-        <p>Soon more information related to me, my studies and work.</p>
+        <p>
+          I'm a nice guy looking for knowledge. I am currently a student of
+          analysis and systems development at Fatec Itapetininga and begginer in
+          web and mobile development. I work at iClouds Sistemas Web as a front
+          end developer and in my spare time I try to deepen my knowledge of
+          HTML, CSS, JavaScript and React.
+        </p>
 
         <p>Let’s work together?</p>
 
         <a href="https://wa.me/5515998266793?text=Olá!%20Tudo%20bem?">
           Send me a message!
         </a>
+        <p>Website under development!</p>
       </ProfileDescription>
     </Container>
   );

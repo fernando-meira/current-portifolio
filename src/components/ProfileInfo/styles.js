@@ -1,5 +1,4 @@
-import styled, { css } from 'styled-components';
-import { darken } from 'polished';
+import styled from 'styled-components';
 import media from 'styled-media-query';
 
 import { pxToRem } from '../../functions';
@@ -181,6 +180,10 @@ export const ProfileDescription = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+
+  p + p {
+    margin-top: ${pxToRem(40)};
+  }
 
   p {
     font-size: ${pxToRem(22)};
