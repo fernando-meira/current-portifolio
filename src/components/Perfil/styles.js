@@ -8,11 +8,10 @@ export const Container = styled.div`
 
   ${media.lessThan('medium')`
     margin-top: ${pxToRem(30)};
-
   `}
 
   ${media.lessThan('small')`
-    margin-top: ${pxToRem(25)} auto;
+    margin-top: ${pxToRem(16)} auto;
   `}
 
   .image-wrapper {

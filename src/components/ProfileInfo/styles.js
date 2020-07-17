@@ -5,7 +5,7 @@ import { pxToRem } from '../../functions';
 import { colors } from '../../themes';
 
 export const Container = styled.section`
-  margin: ${pxToRem(30)} auto;
+  margin: ${pxToRem(32)} auto;
   width: 90%;
 
   display: flex;
@@ -33,14 +33,16 @@ export const Container = styled.section`
   }
 
   ${media.lessThan('large')`
-    margin: ${pxToRem(32)};
-
     align-items: center;
     flex-direction: column;
     justify-content: center;
   `}
 
   ${media.lessThan('medium')`
+    margin: ${pxToRem(30)} auto;
+  `}
+
+  ${media.lessThan('small')`
     margin: ${pxToRem(16)} auto;
   `}
 `;
