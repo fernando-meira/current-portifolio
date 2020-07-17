@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactGA from 'react-ga';
 
-import { Perfil, JobsAndStudies, ProfileInfo, Thanks } from '../../components';
+import { Perfil, ProfileInfo } from '../../components';
 
 import { Container } from './styles';
 

@@ -15,40 +15,45 @@ export const Container = styled.div`
     margin-top: ${pxToRem(25)} auto;
   `}
 
-  img {
+  .image-wrapper {
+    position: relative;
 
-  border-radius: 50%;
-  width: ${pxToRem(207)};
-  height: ${pxToRem(207)};
-  margin: 0 ${pxToRem(33)};
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 1px 6px 0 rgba(255, 255, 255, 0.3);
+    width: ${pxToRem(260)};
+    height: ${pxToRem(260)};
 
-  transition: 0.3s;
-  object-fit: cover;
+    transition: transform 0.4s;
 
-  ${media.lessThan('huge')`
-    width: ${pxToRem(150)};
-    height: ${pxToRem(150)};
-  `}
+    > img {
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      transform: translate(50%, 50%);
 
-  ${media.lessThan('large')`
-    width: ${pxToRem(120)};
-    height: ${pxToRem(120)};
+      border-radius: 50%;
+      width: 65%;
+      height: 65%;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 1px 6px 0 rgba(255, 255, 255, 0.3);
 
-    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.78);
-  `}
+      object-fit: cover;
+    }
 
-  ${media.lessThan('medium')`
-    width: ${pxToRem(130)};
-    height: ${pxToRem(130)};
-  `}
+    ${media.lessThan('huge')`
+      width: ${pxToRem(274)};
+      height: ${pxToRem(274)};
+    `}
 
-  :hover {
-    transform: scale(0.85);
+    ${media.lessThan('large')`
+      width: ${pxToRem(222)};
+      height: ${pxToRem(222)};
+    `}
 
-    border-radius: ${pxToRem(16)};
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    ${media.lessThan('medium')`
+      width: ${pxToRem(180)};
+      height: ${pxToRem(180)};
+    `}
 
-  }
+    :hover {
+      transform: scale(0.9);
+    }
 }`;
