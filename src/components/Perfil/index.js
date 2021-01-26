@@ -1,7 +1,8 @@
 import React from 'react';
 
-import profile from '../../themes/assets/perfilPortifólio.svg';
+import profile from '../../themes/assets/profile.jpg';
 import { ReactComponent as BackgroundImage } from '../../themes/assets/effect-image-outline.svg';
+
 import { Container } from './styles';
 
 export default function Perfil() {

@@ -1,9 +1,6 @@
 import logoSkill from '../../themes/assets/skill.png';
 import logoCps from '../../themes/assets/logo-cps.jpg';
-import origamidLogo from '../../themes/assets/origamid.png';
 import logoiClouds from '../../themes/assets/logo-iclouds.svg';
-import perfilDefault from '../../themes/assets/perfilDefault.png';
-import logoDatametrica from '../../themes/assets/datametrica.png';
 import bootcampRocketseat from '../../themes/assets/bootcampRocketseat.png';
 
 export default {

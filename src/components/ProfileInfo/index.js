@@ -96,10 +96,11 @@ export default function ProfileInfo() {
       <ProfileDescription>
         <p>
           I'm a nice guy looking for knowledge. I am currently a student of
-          analysis and systems development at Fatec Itapetininga and begginer in
-          web and mobile development. I work at iClouds Sistemas Web as a front
-          end developer and in my spare time I try to deepen my knowledge of
-          HTML, CSS, JavaScript and React.
+          systems analysis and development at Fatec Itapetininga and a student
+          of web and mobile development. I work at iClouds Sistemas Web as a
+          front-end developer for just over a year. In my spare time I try to
+          deepen my knowledge in JavaScript, React, React Native, HTML, CSS, and
+          Node.js.
         </p>
 
         <p>Let’s work together?</p>

@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
-
-import { Perfil } from '..';
+import React from 'react';
 
 import data from './dataMock';
 import {
-  Container,
-  StudiesAndJobs,
   Jobs,
-  JobsDescription,
-  JobsImage,
   Studies,
-  StudiesDescription,
+  JobsImage,
+  Container,
   StudiesImage,
+  JobsDescription,
+  StudiesDescription,
 } from './styles';
 
 export default function JobsAndStudies() {

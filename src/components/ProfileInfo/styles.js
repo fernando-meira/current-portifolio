@@ -114,9 +114,13 @@ export const ContactInfoInternal = styled.div`
     color: ${({ color }) => color};
   }
 
+  p,
+  a {
+    word-break: break-all;
+  }
+
   ${media.lessThan('huge')`
     font-size: ${pxToRem(18)};
-
   `}
 
   ${media.lessThan('small')`
@@ -210,6 +214,7 @@ export const ProfileDescription = styled.div`
   `}
 
   ${media.lessThan('large')`
+    width: 90%;
     margin-top: ${pxToRem(32)};
   `}
 
@@ -218,7 +223,6 @@ export const ProfileDescription = styled.div`
   `}
 
   ${media.lessThan('small')`
-    width: 98%;
     height: auto;
     margin-top: ${pxToRem(25)};
 
