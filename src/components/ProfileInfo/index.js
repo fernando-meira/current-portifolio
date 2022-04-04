@@ -97,9 +97,9 @@ export default function ProfileInfo() {
         <p>
           I'm a nice guy looking for knowledge. I am currently a student of
           systems analysis and development at Fatec Itapetininga and a student
-          of web and mobile development. I work at iClouds Sistemas Web as a
-          front-end developer for just over a year. In my spare time I try to
-          deepen my knowledge in JavaScript, React, React Native, HTML, CSS, and
+          of web and mobile development. I work at Goomer as a
+          front-end with about two and a half years of experience in the role. In my spare time I try to
+          deepen my knowledge in JavaScript, TypeScript, React, React Native, HTML, CSS, and
           Node.js.
         </p>
 
